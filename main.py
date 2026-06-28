@@ -4,7 +4,7 @@
 #Graphical and Colors Modules 
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import (
-    QSettings
+    QSettings, QFile, QDir
 )
 
 #Color terminal
@@ -23,12 +23,21 @@ from subprocess import getoutput
 
 #Main window
 class Windows:
-    app = QApplication(sys.argv)
-    window_main = QWidget()
-    window_main.setWindowTitle("BlackCode | AutoVule")
-    window_main.resize(990, 600)
-    window_main.setBackgroundRole
+    def __init__(self):
+        self.app = QApplication(sys.argv)
+        self.window_main = QWidget()
 
-    window_main.show()
+    def MainWindow(self):
+        #Main window
+        self.window_main.setWindowTitle("BlackCode | AutoVule")
+        self.window_main.resize(990, 600)
+        self.window_main.show()
+        
+        
 
-    sys.exit(app.exec_())
+        sys.exit(self.app.exec_())
+
+
+if __name__ == "__main__":
+    window_main = Windows()
+    window_main.MainWindow()
