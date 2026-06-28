@@ -11,20 +11,14 @@ from colorama import Fore
 import requests
 
 #System Modules
-from time import sleep
-from 
+import time
+import os
 import sys
 from subprocess import getoutput
 
 #---------------------------------
 
-#Clear terminal runer
-os.system("clear")
-
-
 #Main window
-
-
 
 app = QApplication(sys.argv)
 window_main = QWidget
