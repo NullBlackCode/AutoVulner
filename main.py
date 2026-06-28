@@ -2,8 +2,8 @@
 #Github: https://github.com/nullBlackCode
 
 #Graphical and Colors Modules 
-from PyQt5 import *
 
+from colorama import Fore
 #Netword Modules 
 import socket
 import requests
